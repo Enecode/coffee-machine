@@ -37,9 +37,15 @@ resources = {
     "chocolate": 20
 }
 
-
+profit = 0
 is_on = True
 while is_on:
     choice = input("What would you like? (tea, conflates, pap: )")
     if choice == "off":
         is_on = False
+    elif choice == "report":
+        print(f"water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Mill: {resources['milo']}ml")
+        print(f"Sugar: {resources['sugar']}ml")
+        print(f"Money: N {profit}")
